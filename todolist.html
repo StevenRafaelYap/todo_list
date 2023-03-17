@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./todolist_function.js" defer></script>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif
+        }
+
+        .section-todo-list{
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-todo-list h2{
+            font-size: 42px;
+            margin: 20px;
+        }
+
+        .input-btn{
+            display: flex;
+            margin-bottom: 10%;
+        }
+        .input-btn input{
+            width: 78%;
+            height: 34px;
+            border-radius: none;
+            border-color: #111;
+            font-size: 19px;
+            padding-left: 17px;
+        }
+        .input-btn button{
+            width: 20%;
+            height: 40px;
+            margin-left: 5px;
+            border-radius: 5px;
+            border-color: #111;
+            color: #111;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .list-tasks{
+            margin-bottom: 11%;
+        }
+        .list-tasks ul{
+            padding-left: 0;
+            margin: 0 13px;
+        }
+        .list-tasks li{
+            font-size: 21px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .list-tasks li:first-letter{
+            color: #32e7ff;
+            text-transform: uppercase;
+        }
+        .list-tasks li span{
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 1px 8px; 
+            color: #111;
+            cursor: pointer;
+            height: 26px;
+        }
+
+        .remove-all{
+            border-radius: 5px;
+            border-color: #111;
+            background-color: #fff;
+            color: #111;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 9px 16px;
+        }
+
+        @media only screen and (max-width: 768px){
+            .section-todo-list{
+                width: 90%;
+            }
+        }
+        p.author {
+            display: flex;
+            justify-content: center;
+            margin-top: 3%;
+            gap: 7px;
+        }
+        p.author a {
+            text-decoration: none;
+            font-weight: 700;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="section-todo-list">
+            <h2>Todos</h2>
+            <div class="input-btn">
+                <input type="text">
+                <button onclick="addTasks()">Add Task</button>
+            </div>
+            <div class="list-tasks">
+                <ul>
+                    <!-- <li>name of task more content <span>X</span></li>
+                    <li>name of task more content <span>X</span></li>
+                    <li>name of task more content <span>X</span></li>
+                    <li>name of task more content <span>X</span></li> -->
+                </ul>
+            </div>
+            <button class="remove-all" onclick="deleteAll()">Remove all</button>
+        </div>
+    </body>  
+</body>
+</html>

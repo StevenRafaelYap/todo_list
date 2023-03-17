@@ -1,0 +1,18 @@
+{
+    "name": "todolist_function",
+    "version": "1.0.0",
+    "description": "",
+    "main": "todolist_function.js",
+    "scripts": {
+      "start": "main.html"
+    },
+    "author": "",
+    "license": "ISC",
+    "browserslist": [
+      "last 1 Chrome version"
+    ],
+    "devDependencies": {
+      "parcel": "^2.8.3"
+    }
+  }
+  
